@@ -21,11 +21,10 @@
   "api": {
     "textAnalyzer": "libpostal",
     "services": {
-      "placeholder": { "url": "http://placeholder:4100" },
       "pip": { "url": "http://pip:4200" },
-      "interpolation": { "url": "http://interpolation:4300" },
-      "libpostal": { "url": "http://libpostal:4400" }
-    }
+      "libpostal": { "url": "http://libpostal:4400" },
+      "placeholder": { "url": "http://placeholder:4100" },
+      "interpolation": { "url": "http://interpolation:4300" }
   },
   "imports": {
     "adminLookup": {
@@ -45,13 +44,18 @@
         "filename": "ukraine-latest.osm.pbf"
       }]
     },
+    "openaddresses": {
+      "datapath": "/data/openaddresses",
+      "files": ["ua/12/city_of_dnipropetrovsk.json", "ua/63/city_of_kharkiv.json"]
+    },
     "polyline": {
       "datapath": "/data/polylines",
       "files": [ "extract.0sv" ]
     },
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
-      "importVenues": false,
+      "countryCode": "UA",
+      "importVenues": false, 
       "importPostalcodes": true,
       "importPlace": [ "85633805" ]
     }
