@@ -25,6 +25,7 @@
       "libpostal": { "url": "http://libpostal:4400" },
       "placeholder": { "url": "http://placeholder:4100" },
       "interpolation": { "url": "http://interpolation:4300" }
+    }
   },
   "imports": {
     "adminLookup": {
@@ -41,12 +42,12 @@
       "leveldbpath": "/tmp",
       "datapath": "/data/openstreetmap",
       "import": [{
-        "filename": "ukraine-latest.osm.pbf"
-      }]
+          "filename": "ukraine-latest.osm.pbf"
+        }]
     },
     "openaddresses": {
       "datapath": "/data/openaddresses",
-      "files": ["ua/12/city_of_dnipropetrovsk.json", "ua/63/city_of_kharkiv.json"]
+      "files": ["ua/12/city_of_dnipropetrovsk.json","ua/63/city_of_kharkiv.json"]
     },
     "polyline": {
       "datapath": "/data/polylines",
@@ -55,7 +56,7 @@
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "countryCode": "UA",
-      "importVenues": false, 
+      "importVenues": false,
       "importPostalcodes": true,
       "importPlace": [ "85633805" ]
     }
