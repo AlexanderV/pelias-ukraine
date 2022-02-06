@@ -52,13 +52,6 @@
     "polyline": {
       "datapath": "/data/polylines",
       "files": [ "extract.0sv" ]
-    },
-    "whosonfirst": {
-      "datapath": "/data/whosonfirst",
-      "countryCode": "UA",
-      "importVenues": false,
-      "importPostalcodes": true,
-      "importPlace": [ "85633805" ]
     }
   }
 }
